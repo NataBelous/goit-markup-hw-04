@@ -74,6 +74,8 @@ body {
 
 .list-link-nav {
 	margin-right: 50px;
+	display: flex;
+	align-items: center;
 }
 .list-link-nav:last-child {
 	margin-right: 0;
@@ -191,10 +193,16 @@ body {
 /* hero */
 
 .hero {
-	background-color: #2f303a;
+	background: #C4C4C4;
 	text-align: center;
 	padding-top: 200px;
 	padding-bottom: 200px;
+
+	background-image: linear-gradient( to right rgba(47, 48, 58, 0.8)),
+	 url(../images/Img-hero.jpg);
+	max-width: 1600px;
+	height: 600px;
+  
 }
 .text-hero {
 	font-weight: 900;
@@ -373,8 +381,50 @@ ul {
 /* ICONS */
 
 .icon-mail {
-
+	stroke: #000000;
 }
 .icon-smartphone {
+  stroke: #757575;
+}
+
+.svg-icon-specifics {
+}
+
+.div-specifics {
+	width: 270px;
+	height: 120px;
+	margin-bottom: 30px;
+  background: #F5F4FA;
+  border-radius: 4px;
+}
+
+.team-social-links {
+	width: 20px;
+	height: 20px;
+}
+
+.social-links {
+
+}
+
+.svg-logo {
+	
+}
+
+.logo {
+	display:flex
+}
+
+.logo-list {
+  width: 170px;
+	height: 92px;
+	border: 1px #AFB1B8;
+}
+
+.div-logo {
+	
+}
+
+.logo-section {
 
 }
