@@ -451,7 +451,6 @@ ul {
 }
 .logo-list:last-child {
 	margin-right: 0;
-	fill: currentColor;
 }
 
 .logo-link:hover,
@@ -461,9 +460,9 @@ ul {
 .logo-link {
 	display: block;
 	height: 100%;
+	color: #afb1b8;
 }
 .logo-link > svg {
 	margin: 16px 32px;
+	--color1: currentColor;
 }
-
-
