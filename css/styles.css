@@ -411,12 +411,28 @@ ul {
 }
 
 .social-links {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	height: 44px;
+	width: 206px;
+	margin: auto;
+}
+.list-social {
+	width: 44px;
+	height: 44px;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+}
+.list-social:last-child {
+	margin-right: 0;
+}
+.list-social:hover,
+.list-social:focus {
+  color: var(--accent-color);
 }
 
- .button-team-social {
-   width: 44px;
-	 height: 44px;
- }
 
 .svg-logo {
 }
