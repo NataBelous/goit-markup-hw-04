@@ -198,7 +198,7 @@ body {
 	padding-top: 200px;
 	padding-bottom: 200px;
 
-	background-image: linear-gradient( to right rgba(47, 48, 58, 0.8)),
+	background-image: linear-gradient(rgba(47, 48, 58, 0.8)),
 	 url(../images/Img-hero.jpg);
 	max-width: 1600px;
 	height: 600px;
@@ -382,20 +382,27 @@ ul {
 
 .icon-mail {
 	stroke: #000000;
+	margin-right: 10px;
 }
 .icon-smartphone {
   stroke: #757575;
+	margin-right: 10px;
 }
 
 .svg-icon-specifics {
+  display: block;
+	background-size: 70px 70px;
+	margin: auto;
 }
 
 .div-specifics {
-	width: 270px;
 	height: 120px;
 	margin-bottom: 30px;
   background: #F5F4FA;
   border-radius: 4px;
+	display: flex;
+  align-items: center;
+  justify-content: center; 
 }
 
 .team-social-links {
@@ -404,25 +411,46 @@ ul {
 }
 
 .social-links {
-
 }
 
+ .button-team-social {
+   width: 44px;
+	 height: 44px;
+ }
+
 .svg-logo {
-	
 }
 
 .logo {
-	display:flex
+	display:flex;
+	align-items: center;
+	justify-content: center;
+
 }
 
 .logo-list {
   width: 170px;
 	height: 92px;
-	border: 1px #AFB1B8;
+	border: 1px solid#AFB1B8;
+	margin-right: 30px;
 }
 
-.div-logo {
+.logo-link:hover,
+.logo-link:focus {
+  color: var(--accent-color);
 	
+}
+.logo-link {
+	display: block;
+	height: 100%;
+}
+
+.logo-link > svg {
+	margin: 16px 32px;
+}
+.logo-list:last-child {
+	margin-right: 0;
+	fill: currentColor;
 }
 
 .logo-section {
