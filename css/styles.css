@@ -425,7 +425,6 @@ ul {
 	display:flex;
 	align-items: center;
 	justify-content: center;
-
 }
 
 .logo-list {
@@ -434,25 +433,21 @@ ul {
 	border: 1px solid#AFB1B8;
 	margin-right: 30px;
 }
-
-.logo-link:hover,
-.logo-link:focus {
-  color: var(--accent-color);
-	
-}
-.logo-link {
-	display: block;
-	height: 100%;
-}
-
-.logo-link > svg {
-	margin: 16px 32px;
-}
 .logo-list:last-child {
 	margin-right: 0;
 	fill: currentColor;
 }
 
-.logo-section {
-
+.logo-link:hover,
+.logo-link:focus {
+  color: var(--accent-color);
 }
+.logo-link {
+	display: block;
+	height: 100%;
+}
+.logo-link > svg {
+	margin: 16px 32px;
+}
+
+
