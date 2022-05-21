@@ -405,7 +405,7 @@ ul {
   justify-content: center; 
 }
 
-.team-social-links {
+.team-social-links, .footer-link {
 	width: 20px;
 	height: 20px;
 	--color1:currentColor;
@@ -474,4 +474,31 @@ ul {
 .logo-link > svg {
 	margin: 16px 32px;
 	--color1: currentColor;
+}
+.footer-link {
+	display: flex;
+  width: 44px;
+	height: 44px;
+	align-items: center;
+	justify-content: center;
+	color: var(--primary-color-social);
+	border-radius: 50%;
+}
+.footer-link:hover,
+.footer-link:focus {
+	background-color: var(--accent-color);
+	color: var(--primary-white-color)
+}
+.footer-social {
+	width: 206px;
+	display: flex;
+
+}
+.footer-container {
+	display: flex;
+}
+
+.footer-address {
+	width: 230px;
+	margin-right: 70px;
 }
