@@ -6,6 +6,7 @@
 	--primary-black-color: #000000;
 	--primary-white-color: #ffffff;
 	--primary-adres-color: rgba(255, 255, 255, 0.6);
+	--primary-color-social: #afb1b8;
 }
 
 body {
@@ -266,7 +267,6 @@ body {
 	text-align: center;
 	color: var(--title-text-color);
 	margin-top: 10px;
-	margin-bottom: 30px;
 }
 .team-flex {
 	display: flex;
@@ -408,30 +408,38 @@ ul {
 .team-social-links {
 	width: 20px;
 	height: 20px;
+	--color1:currentColor;
+}
+
+.team-link {
+	display: flex;
+  width: 44px;
+	height: 44px;
+	align-items: center;
+	justify-content: center;
+	color: var(--primary-color-social);
+	border-radius: 50%;
+}
+.team-link:hover,
+.team-link:focus {
+	background-color: var(--accent-color);
+	color: var(--primary-white-color)
 }
 
 .social-links {
 	display:flex;
 	align-items: center;
 	justify-content: center;
-	height: 44px;
-	width: 206px;
-	margin: auto;
+	margin: 16px auto 30px;
 }
 .list-social {
-	width: 44px;
-	height: 44px;
-	align-items: center;
-	justify-content: center;
 	margin-right: 10px;
 }
 .list-social:last-child {
 	margin-right: 0;
-}
-.list-social:hover,
-.list-social:focus {
-  color: var(--accent-color);
-}
+} 
+	
+
 
 
 .svg-logo {
@@ -444,9 +452,7 @@ ul {
 }
 
 .logo-list {
-  width: 170px;
-	height: 92px;
-	border: 1px solid#AFB1B8;
+  
 	margin-right: 30px;
 }
 .logo-list:last-child {
@@ -456,11 +462,14 @@ ul {
 .logo-link:hover,
 .logo-link:focus {
   color: var(--accent-color);
+	border-color: var(--accent-color);
 }
 .logo-link {
 	display: block;
-	height: 100%;
-	color: #afb1b8;
+	color: var(--primary-color-social);
+	width: 170px;
+	height: 92px;
+	border: 1px solid var(--primary-color-social);
 }
 .logo-link > svg {
 	margin: 16px 32px;
