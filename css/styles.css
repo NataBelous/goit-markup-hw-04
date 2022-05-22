@@ -405,7 +405,7 @@ ul {
   justify-content: center; 
 }
 
-.team-social-links, .footer-link {
+.team-social-links, .footer-svg {
 	width: 20px;
 	height: 20px;
 	--color1:currentColor;
@@ -483,7 +483,16 @@ ul {
 	justify-content: center;
 	color: var(--primary-color-social);
 	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
 }
+
+.footer-li {
+  margin-right: 10px;
+}
+.footer-li:last-child {
+	margin-right: 0;
+}
+
 .footer-link:hover,
 .footer-link:focus {
 	background-color: var(--accent-color);
@@ -491,9 +500,21 @@ ul {
 }
 .footer-social {
 	width: 206px;
-	display: flex;
+	color: var(--primary-white-color);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.142;
+	text-transform: uppercase;
+	margin-top: 13px;
+	}
 
+.footer-list {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 19px;
 }
+
 .footer-container {
 	display: flex;
 }
