@@ -175,6 +175,8 @@ body {
 }
 
 .list-contact {
+	display: flex;
+	align-items: center;
 	font-weight: 500;
 	line-height: 1.14;
 	color: var(--title-text-color);
@@ -221,6 +223,7 @@ body {
 	 url(../images/Img-hero.jpg);
 	max-width: 1600px;
 	height: 600px;
+	margin: 0 auto;
 }
 
 .text-hero {
@@ -365,12 +368,6 @@ img {
 	flex-wrap: wrap;
 }
 
-.list-portfolio:hover,
-.list-portfolio:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-	            0px 4px 4px rgba(0, 0, 0, 0.06), 
-	            1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
 .list-portfolio {
 	margin-right: 30px;
@@ -387,6 +384,20 @@ img {
 
 .list-portfolio:nth-last-child(-n + 3) {
 	margin-bottom: 0;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+	            0px 4px 4px rgba(0, 0, 0, 0.06), 
+	            1px 4px 6px rgba(0, 0, 0, 0.16);
+	color: var(--accent-color);
+}
+
+.portfolio-item {
+	display: block;
+	text-decoration: none;
+	color: var(--primary-text-color);
 }
 
 .button-flex {
@@ -427,19 +438,9 @@ ul {
 
 /* ICONS-social*/
 
-.icon-mail {
-	stroke: var(--primary-black-color);
+.contact-icon {
 	margin-right: 10px;
-}
-.icon-smartphone {
-  stroke: var(--title-text-color);
-	margin-right: 10px;
-}
-
-.svg-icon-specifics {
-  display: block;
-	background-size: 70px 70px;
-	margin: auto;
+	--color4: currentColor;
 }
 
 .div-specifics {
@@ -508,11 +509,13 @@ ul {
 }
 
 .logo-link {
-	display: block;
 	color: var(--primary-color-social);
 	width: 170px;
 	height: 92px;
 	border: 1px solid var(--primary-color-social);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .logo-link > svg {
@@ -526,7 +529,7 @@ ul {
 	height: 44px;
 	align-items: center;
 	justify-content: center;
-	color: var(--primary-color-social);
+	color: var(--primary-white-color);
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.1);
 }
@@ -534,17 +537,14 @@ ul {
 .footer-link:hover,
 .footer-link:focus {
 	background-color: var(--accent-color);
-	color: var(--primary-white-color)
 }
 
 .footer-social {
-	width: 206px;
 	color: var(--primary-white-color);
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.142;
 	text-transform: uppercase;
-	margin-top: 13px;
 }
 
 .footer-list {
@@ -564,6 +564,7 @@ ul {
 
 .footer-container {
 	display: flex;
+	align-items: baseline;
 }
 
 .footer-address {
